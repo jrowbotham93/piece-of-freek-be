@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "name": "history",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "origin_header": {
+      "type": "string"
+    },
+    "origin_body": {
+      "type": "text"
+    },
+    "marriage_header": {
+      "type": "string"
+    },
+    "marriage_body": {
+      "type": "text"
+    },
+    "recipe_header": {
+      "type": "string"
+    },
+    "recipe_body": {
+      "type": "string"
+    },
+    "origin_icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "marriage_icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "recipe_icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

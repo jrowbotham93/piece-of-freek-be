@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/social-impacts",
+      "handler": "social-impact.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/social-impacts/count",
+      "handler": "social-impact.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/social-impacts/:id",
+      "handler": "social-impact.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/social-impacts",
+      "handler": "social-impact.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/social-impacts/:id",
+      "handler": "social-impact.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/social-impacts/:id",
+      "handler": "social-impact.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shareds",
+  "info": {
+    "name": "shared"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "footer_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "read_more": {
+      "type": "string"
+    }
+  }
+}
